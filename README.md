@@ -1,8 +1,5 @@
-Here's your polished README:
+<div align="center">
 
----
-
-```markdown
 # 🔬 Nuclei Segmentation: U-Net vs Attention U-Net
 
 [![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://python.org)
@@ -12,6 +9,7 @@ Here's your polished README:
 
 > **Automated cell nuclei segmentation in fluorescence microscopy images using deep learning — achieving 90.08% Dice score in under 30 minutes of training.**
 
+</div>
 ---
 
 ## 📌 Overview
@@ -60,8 +58,12 @@ The dataset spans diverse imaging conditions — varying stains, resolutions, ce
 ### U-Net *(Ronneberger et al., MICCAI 2015)*
 A symmetric encoder-decoder with skip connections that preserve spatial detail lost during downsampling. The de facto standard for biomedical image segmentation.
 
+| ![U-Net Architecture](results/figures/unet_architecture.png)
+
 ### Attention U-Net *(Oktay et al., arXiv 2018)*
 Extends U-Net with **soft attention gates** on skip connections, allowing the model to suppress irrelevant background activations and focus on target structures. Most beneficial in cluttered or noisy imaging scenarios.
+
+| ![Attention U-Net Architecture](results/figures/attention_U-Net_architecture.png)
 
 ---
 
@@ -76,11 +78,13 @@ Extends U-Net with **soft attention gates** on skip connections, allowing the mo
 | Val Dice | **0.9008** | 0.8974 | -0.0034 |
 | Epochs | 30 | 30 | — |
 
+---
+
 ### Qualitative Analysis
 
-| U-Net Predictions | Attention U-Net Predictions |
-|---|---|
-| ![U-Net](results/figures/unet_predictions.png) | ![Attention](results/figures/attention_unet_predictions.png) |
+| ![sample predictions(results/figures/attention_unet_predictions.png) 
+
+---
 
 ### Training Curves
 
@@ -117,7 +121,7 @@ Extends U-Net with **soft attention gates** on skip connections, allowing the mo
 ### 1. Clone & Install
 
 ```bash
-git clone https://github.com/asadshahnawaz/cell-segmentation-deep-learning.git
+git clone https://github.com/asadshahnawaz20/cell-segmentation-deep-learning.git
 cd nuclei-segmentation
 pip install -r requirements.txt
 ```
