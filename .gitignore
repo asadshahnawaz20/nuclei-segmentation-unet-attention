@@ -1,0 +1,19 @@
+# Large files
+*.pth
+*.zip
+*.tar.gz
+
+# Kaggle working directory
+/kaggle/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# IDE files
+.vscode/
+.idea/
+
+# Data (too large)
+data/
+stage1_train/
